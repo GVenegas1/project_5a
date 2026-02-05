@@ -5,41 +5,40 @@
 #boxes from the biggest to the smallest.
 
 class Box:
-    """A class that represents a box with dimensions."""
+    """A class that represents a box with dimensions"""
 
     def __init__(self, length, width, height):
-        """Sets the starting dimensions using private variables."""
 
         self._length =length
         self._width = width
         self._height = height
 
     def volume(self):
-        """Calculate the volume by multiplying L,W,and H."""
+        """Calculate the volume by multiplying L,W,and H"""
 
         #Using a variable here to make it easier to read
         box_volume = self._length * self._width * self._height
         return box_volume
 
     def get_length(self):
-        """Returns the length of the box."""
+        """Returns the length of the box"""
 
         return self._length
 
     def get_width(self):
-        """Returns the width of the box."""
+        """Returns the width of the box"""
 
         return self._width
 
     def get_height(self):
-        """Returns the height of the box."""
+        """Returns the height of the box"""
 
         #Fixed this! It actually returns height now
         return self._height
 
 
 def box_sort(box_list):
-    """Sorts a list of boxes from greatest volume to least volume.
+    """Sorts a list of boxes from the biggest to the smallest.
     It changes the list directly without making a new one."""
 
     #Start at the second box because the first one is "sorted"
